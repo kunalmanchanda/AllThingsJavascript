@@ -13,7 +13,7 @@ function hoisting(){
 }
 
 
-console.log(typeof a === "undefined") // not declared & undefined insted of a === undefined which fails bcz a doesnt exist in the memory of js
+console.log(typeof a === "undefined") // not declared & undefined instead of a === undefined which fails bcz a doesn't exist in the memory of js
 
 
 

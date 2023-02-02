@@ -2,6 +2,8 @@
 
 > Getting Started...
 
+* Everything in JavaScript depends upon execution context
+
 ## lodash
 
 * Values that aren't considered collections are always seen as empty
@@ -10,7 +12,7 @@
 
 * scope is determined lexically - whr its defined and how
 * JS uses function scope
-* nested functions create a scope chain
+* nested functions create a scope chain - execution context & lexical environment
 
 #### Global Variables
 
@@ -27,10 +29,11 @@
 
 #### Hoisting
 
+* Execution Context
 * Hoist means to lift or raise up
 * function declaration are hoisted not function expression
-* functions & variable declarations are hoisted
-* let & const aren't hoisted
+* functions & variable declarations are hoisted to the top level of code - i.e. you can use them even before they are declared
+* let & const are hoisted but they stay in Temporal Dead Zone until initialized with value
 
 #### functions
 
@@ -42,7 +45,7 @@
 
 * var has a functional & global scope
 * let, const have a code block scope
-* var can be hoisted while let doesnt
+* var & let can be hoisted, but let stays in temporal dead zone until its initialized
 
 ##### system assigned absence of value -> undefined, programmer assigned absence of value -> null
 
