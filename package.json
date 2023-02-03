@@ -1,0 +1,19 @@
+{
+  "name": "allthingsjavascript",
+  "version": "1.0.0",
+  "description": "> Getting Started...",
+  "main": "functionCurrying.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-kunal:kunalmanchanda/AllThingsJavascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
