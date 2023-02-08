@@ -64,7 +64,7 @@ userZ.userZ2.getDetails();
 
 let user3 = {
     name: "kunal Manchanda",
-    // no outer normal function or method which we expects so its  this will point to window object
+    // no outer normal function or method which we expects so its this will point to window object
     getDetails: () => {
         console.log(this, this.name)
     }
@@ -72,3 +72,27 @@ let user3 = {
 
 user3.getDetails();
 
+// in normal function this points to the global object - i.e window
+function makeUser() {
+    return {
+        name: "John",
+        ref: this
+    }
+}
+
+// user5 is an object with ref: window & this refers to the object that is calling the current function 
+let user5 = makeUser();
+
+// window.name = '' predefined always so empty string is an answer
+console.log(user5.ref.name)
+
+const objects = {
+    name: "kunal",
+    ref: this,
+    sayIt() {
+        console.log(this)
+    }
+}
+
+console.log(objects.ref)
+objects.sayIt()

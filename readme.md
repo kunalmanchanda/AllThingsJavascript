@@ -33,3 +33,15 @@
 * in arrow functions this points to its outer normal function
 * binding the function to the object & this will point to that object
 * arrow, anonymous, "IIFE" all points up to its parent normal functions for this
+* let have a block scope, this points to the window object & let stays inside script
+
+## bind, call, apply - explicit Binding
+
+> function.call(object)
+
+* bind - binding the function to that object (Obj) will create a new function, so that new function this will point to object(Obj)
+* call calling the function with reference to the object passed as a parameter
+* apply params are passed as an array of args, call takes ti as a comma separated values
+* concat returns a new array instead of modifying the new array
+* try to use apply with the array questions - Math.max.apply(null, [1, 2, 3]) returns 3 as apply takes arguments as an array
+* when a function is bind to a object it will remain in binding to that object only -> bind chaining doesn't exists
